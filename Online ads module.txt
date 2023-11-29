@@ -1,0 +1,20 @@
+
+Olx - ads
+
+seller/buyer
+1. seller - register/login 
+post ad- (postid, name, contact, vecname, vtype, vnumber, vmodelno, vehmodelname, postalcode, address, owner-(first,second,third) , image  (image processing ) , desc, price)
+
+2. table create (ownername, vehni no, vehname,  modelno, modelname, pincode )
+
+
+3. buyer -
+view ad
+
+change image as car or two wheeler
+-------------------------------------------------------------
+ 
+
+
+
+ 
