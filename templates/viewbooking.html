@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="assets/images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <title>Digital Fraud Ads Detection Using AI</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="static/assets/css/fontawesome.css">
+    <link rel="stylesheet" href="static/assets/css/style.css">
+    <link rel="stylesheet" href="static/assets/css/owl.css">
+
+  </head>
+
+  <body>
+
+    <!--  
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+      -->
+
+        <!-- Header -->
+    <header class="">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="BuyerHome.html"><h2>Digital Fraud Add Detection</h2></a>
+         
+            <span class="navbar-toggler-icon"></span>          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{ url_for('.home') }}">Home                    </a>                </li>
+
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('.about') }}">About</a></li>
+
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('.viewbooking') }}">View Booking</a></li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">More</a>
+
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="{{ url_for('.rules') }}">Rules</a>
+                      </div>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('.login') }}">Login</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Page Content -->
+    <!-- Banner Starts Here -->
+    <div class="banner header-text">
+      <div class="owl-banner owl-carousel">
+        <div class="banner-item-01">
+          <div class="text-content">
+            <h4>Find your Best Offer Today</h4>
+          </div>
+        </div>
+        <div class="banner-item-02">
+          <div class="text-content">
+            <h4>Fugiat Aspernatur</h4>
+            <h2>Laboriosam reprehenderit ducimus</h2>
+          </div>
+        </div>
+        <div class="banner-item-03">
+          <div class="text-content">
+            <h4>Saepe Omnis</h4>
+            <h2>Quaerat suscipit unde minus dicta</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Banner Ends Here -->
+    <div class="best-features">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2>Welcome to Digital Fraud Ads Web Portal </h2>
+ 
+	 <table class="table table-striped">
+                 <tr>
+
+	<th>Owner Name</th>
+	 <th>Vehicle Number</th>
+	<th>Vehical Name</th>
+              <th>User name </th>
+
+              <th>Contact</th>
+	<th>Email</th>
+
+          </tr>
+
+                {% for row in book%}
+                <tr>
+                     <td>{{row.0}}</td>
+ 	 <td>{{row.1}}</td>
+                    <td>{{row.2}}</td>
+                    <td>{{row.3}}</td> 
+	    <td>{{row.4}}</td>
+                    <td>{{row.5}}</td>
+
+  </td>
+	  
+        <i class="material-icons"></i></input></a>
+                   
+                </tr>
+ {% endfor  %}
+</table>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="call-to-action">
+      <div class="container">
+        <div class="row"></div>
+      </div>
+    </div>
+
+    
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="inner-content">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="static/vendor/jquery/jquery.min.js"></script>
+    <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Additional Scripts -->
+    <script src="static/assets/js/custom.js"></script>
+    <script src="static/assets/js/owl.js"></script>
+  </body>
+</html>

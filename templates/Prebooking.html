@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="assets/images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <title>Digital Fraud Ads Detection Using AI</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="static/assets/css/fontawesome.css">
+    <link rel="stylesheet" href="static/assets/css/style.css">
+    <link rel="stylesheet" href="static/assets/css/owl.css">
+
+    <style type="text/css">
+<!--
+.style10 {font-family: "Times New Roman", Times, serif; font-size: 18; }
+.style3 {font-family: "Times New Roman", Times, serif; font-size: 18px; }
+.style8 {font-size: 18px}
+-->
+    </style>
+</head>
+
+  <body>
+
+    <!--
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+     -->
+
+  <!-- Header -->
+    <header class="">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+         <h2>Digital Fraud Ad Detection</h2>
+         
+            <span class="navbar-toggler-icon"></span>          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{ url_for('.home') }}">Home                    </a>                </li> 
+
+                <a class="nav-link" href="{{ url_for('.home') }}">Home</a></li>
+    <li class="nav-item"><a class="nav-link" href="{{ url_for('.viewpost') }}">View Post</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('.prebook') }}">Prebooking</a></li>
+
+
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('.login') }}">Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Page Content -->
+    <!-- Banner Starts Here -->
+    <div class="banner header-text">
+      <div class="owl-banner owl-carousel">
+        <div class="banner-item-01">
+          <div class="text-content">
+            <h4>Find your Best Offer Today</h4>
+          </div>
+        </div>
+        <div class="banner-item-02">
+          <div class="text-content">
+            <h4>Fugiat Aspernatur</h4>
+            <h2>Laboriosam reprehenderit ducimus</h2>
+          </div>
+        </div>
+        <div class="banner-item-03">
+          <div class="text-content">
+            <h4>Saepe Omnis</h4>
+            <h2>Quaerat suscipit unde minus dicta</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Banner Ends Here -->
+    <div class="best-features">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2>Welcome to Digital Fraud Ads Web Portal </h2>
+            </div>
+          </div>
+          <div class="col-md-6">
+	   <form action="{{ url_for('insertprebook') }}" method="POST" >
+	 {%with messages = get_flashed_messages()%}
+   		 {%if messages%}
+    		{% for message in messages %}
+    		<div >     		 
+     		 <h3 style="color:blue;">  {{message}} </h3>
+    		</div>
+    		{%endfor%}
+    		{%endif%}
+    		{%endwith%}
+            <table width="700" height="294" border="1" bordercolor="#9933FF" >
+              <tr>
+                <td colspan="2"><div align="center" class="style3"><span class="style8">Post Ads</span></div></td>
+              </tr>
+              
+              <tr>
+                <td><span class="style3">Owner Name </span></td>
+                <td><span class="style3">
+                  <input type="text" name="ownername" >
+                </span></td>
+              </tr>
+                <tr>
+                <td><span class="style3">Vehicle Number </span></td>
+                <td><input type="text" name="vnumber"></td>
+              </tr>
+              <tr>
+                <td><span class="style3">Vehicle Name </span></td>
+                <td><input type="text" name="vname"></td>
+              </tr>          
+           
+              <tr>
+                <td><span class="style3">User Name </span></td>
+                <td><input type="text" name="username"></td>
+              </tr>
+	  <tr>
+                <td><span class="style3">Contact</span></td>
+                <td><input type="text" name="contact"></td>
+              </tr>
+
+              <tr>
+                <td><span class="style3">Email</span></td>
+                <td><input type="text" name="email"></td>
+              </tr>
+             
+          
+              <tr>
+                <td class="style3"><div align="center">
+                    <input type="submit" name="Submit" value="Pre Book">
+                </div></td>
+                <td><div align="center">
+                    <input type="reset" name="Submit2" value="Cancel">
+                </div></td>
+              </tr>
+            </table>
+</form>
+          </div>
+          <div class="col-md-6">
+            <div class="right-image">
+              <img src="static/5.jpg" alt="" width="844" height="280">            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="call-to-action">
+      <div class="container">
+        <div class="row"></div>
+      </div>
+    </div>
+
+    
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="inner-content">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="static/vendor/jquery/jquery.min.js"></script>
+    <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Additional Scripts -->
+    <script src="static/assets/js/custom.js"></script>
+    <script src="static/assets/js/owl.js"></script>
+  </body>
+</html>
